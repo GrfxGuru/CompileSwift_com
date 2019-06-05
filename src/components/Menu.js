@@ -9,6 +9,10 @@ const menuItems = [
     path: "/",
   },
   {
+    name: "Podcast",
+    path: "/podcast",
+  },
+  {
     name: "About",
     path: "/about",
   },

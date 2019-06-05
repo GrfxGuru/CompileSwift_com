@@ -46,18 +46,24 @@ class BlogIndex extends React.Component {
             </p>
             <ul>
               <li>
-                Twitter: <a href='https://twitter.com/compileswift' target='_blank'>@CompileSwift</a>
+                Twitter: <a href='https://twitter.com/compileswift' target='_blank' rel='noopener noreferrer'>@CompileSwift</a>
               </li>
               <li>
-                LinkedIN: <a href='https://www.linkedin.com/in/peterwitham' target='_blank'>PeterWitham</a>
+                LinkedIN: <a href='https://www.linkedin.com/in/peterwitham' target='_blank' rel='noopener noreferrer'>PeterWitham</a>
               </li>
               <li>
-                Telegram: <a href='https://t.me/compileswift' target='_blank'>CompileSwift</a>
+                Telegram: <a href='https://t.me/compileswift' target='_blank' rel='noopener noreferrer'>CompileSwift</a>
               </li>
               <li>
-                GitHub: <a href='https://www.github.com/grfxguru/' target='_blank'>GrfxGuru</a>
+                GitHub: <a href='https://www.github.com/grfxguru/' target='_blank' rel='noopener noreferrer'>GrfxGuru</a>
               </li>
             </ul>
+            <br/>
+            <p>
+              Thank You, for your time.
+            </p>
+            <br/>
+            <br/>
           </div>
         </div>
       </Layout>
