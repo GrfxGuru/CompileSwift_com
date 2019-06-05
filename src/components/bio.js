@@ -46,11 +46,11 @@ function Bio() {
                   ...scale(-1 / 5),
                 }}
               >
-                I enjoy the process of building a product from 0 to 1.
+                Web and Mobile Software Maker, Photographer and Podcaster. I live and breath creativity.
                 <br />
-                You can connect with me via{" "}
+                I'd love for you to connect with me via{" "}
                 <a href={`https://twitter.com/${twitter}`}>Twitter</a> or if you
-                like to look at good photos,{" "}
+                are a photo person like myself,{" "}
                 <a href={`https://instagram.com/${instagram}`}>Instagram</a>.
               </p>
             </div>
