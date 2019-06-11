@@ -16,7 +16,8 @@ export default () => (
       <div style={{ maxWidth: rhythm(27) }}>
         <h1>Thank you!</h1>
         <p>
-          We try to respond as quickly as possible, we appreciate your patience.
+          We try to respond as quickly as possibxle, we appreciate your
+          patience.
         </p>
       </div>
     </div>
