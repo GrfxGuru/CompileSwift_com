@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import Headroom from "react-headroom"
 import { rhythm, scale } from "../utils/typography"
+import CSLogo from "./cs-logo"
 
 import Menu from "./Menu"
 
@@ -13,27 +14,36 @@ class Layout extends React.Component {
     header = (
       <div
         style={{
-          backgroundColor: "#ffffff",
+          backgroundColor: "#f57738",
+          paddingTop: 40,
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
         }}
       >
-        <h1
+        <Link
           style={{
-            ...scale(2 / 2.25),
-            fontWeight: "bold",
-            margin: rhythm(1 / 2),
+            boxShadow: `none`,
+            textDecoration: `none`,
+            color: `white`,
+            display: "flex",
+            justifyContent: "center",
           }}
+          to={`/`}
         >
-          <Link
+          <CSLogo />
+          <h1
             style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
+              ...scale(2 / 2.25),
+              fontWeight: "bold",
+              marginLeft: 20,
+              marginRight: 80,
+              marginTop: 5,
             }}
-            to={`/`}
           >
             {title}
-          </Link>
-        </h1>
+          </h1>
+        </Link>
         <Menu />
       </div>
     )
