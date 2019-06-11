@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import Headroom from "react-headroom"
-import { rhythm, scale } from "../utils/typography"
+import { scale } from "../utils/typography"
 import CSLogo from "./cs-logo"
 
 import Menu from "./Menu"
