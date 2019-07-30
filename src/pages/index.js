@@ -5,7 +5,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 import ShortBio from "../components/ShortBio"
-import { Helmet } from "react-helmet/es/Helmet"
 
 class BlogIndex extends React.Component {
   render() {
@@ -21,9 +20,6 @@ class BlogIndex extends React.Component {
           keywords={[`blog`, `gatsby`, `javascript`, `react`, 'swift', 'development',
           'ios', 'macos', 'watchos', 'podcast', 'programming', 'software']}
         />
-        <Helmet>
-          <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        </Helmet>
         <div
           style={{
             width: "100%",
@@ -34,6 +30,7 @@ class BlogIndex extends React.Component {
           }}
         >
           <div style={{ maxWidth: maxWidth }}>
+            <h3 style={{textAlign: "center", fontWeight: "bold"}}>Work in progress, please be patient</h3>
             {posts.map(({ node }) => {
               const title = node.frontmatter.title || node.fields.slug
               return (
