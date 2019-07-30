@@ -30,6 +30,7 @@
     "react-dom": "^16.8.6",
     "react-headroom": "^2.2.8",
     "react-helmet": "^5.2.1",
+    "react-kawaii": "^0.14.4",
     "react-typography": "^0.16.19",
     "reading-time": "^1.2.0",
     "typeface-merriweather": "0.0.72",

@@ -20,6 +20,6 @@ Since then, I have learned a lot, Swift has grown up and is now something that I
 
 And that means I get to spend more time thinking, living with, and writing Swift. I will continue to write my posts, and even try to make a go of my new CompileSwift Podcast. I also intend to stay just where I am in all the amazing communities out there.
 
-So you see, the only real difference is that I seperated the content to a dedicated home.
+So you see, the only real difference is that I separated the content to a dedicated home.
 
 Let's continue the journey, shall we.

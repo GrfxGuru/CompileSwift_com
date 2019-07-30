@@ -20,35 +20,7 @@ function ShortBio({ post, hideAvatar, hideAuthor, hideDate, hideReadTime }) {
               display: `flex`,
             }}
           >
-            {!hideAvatar && (
-              <Image
-                fixed={avatar.childImageSharp.fixed}
-                alt={author}
-                style={{
-                  marginRight: rhythm(1 / 2),
-                  marginBottom: 0,
-                  minWidth: 50,
-                  borderRadius: `100%`,
-                }}
-                imgStyle={{
-                  borderRadius: `50%`,
-                }}
-              />
-            )}
-
             <div>
-              {!hideAuthor && (
-                <p
-                  style={{
-                    ...scale(-1 / 5),
-                    display: `block`,
-                    marginBottom: rhythm(1),
-                    color: "black",
-                  }}
-                >
-                  {author}
-                </p>
-              )}
               <p
                 style={{
                   ...scale(-1.5 / 5),

@@ -38,14 +38,16 @@ class BlogPostTemplate extends React.Component {
               {post.frontmatter.title}
             </h1>
             <ShortBio post={post} />
-            <br />
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
+            <br/>
+            <br/>
             <hr
               style={{
                 marginBottom: rhythm(1),
               }}
             />
             <Bio />
+            <br/>
           </div>
         </div>
         <br />
