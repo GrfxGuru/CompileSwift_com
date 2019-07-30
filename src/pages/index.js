@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 import ShortBio from "../components/ShortBio"
+import { Helmet } from "react-helmet/es/Helmet"
 
 class BlogIndex extends React.Component {
   render() {
@@ -16,9 +17,13 @@ class BlogIndex extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
-          title="All posts"
-          keywords={[`blog`, `gatsby`, `javascript`, `react`]}
+          title="Welcome"
+          keywords={[`blog`, `gatsby`, `javascript`, `react`, 'swift', 'development',
+          'ios', 'macos', 'watchos', 'podcast', 'programming', 'software']}
         />
+        <Helmet>
+          <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        </Helmet>
         <div
           style={{
             width: "100%",
@@ -35,7 +40,7 @@ class BlogIndex extends React.Component {
                 <div key={node.fields.slug}>
                   <h3
                     style={{
-                      ...scale(1 / 3),
+                      ...scale(1 / 1.5),
                       marginBottom: rhythm(1 / 4),
                     }}
                   >
@@ -52,8 +57,8 @@ class BlogIndex extends React.Component {
                   </h3>
                   <p
                     style={{
-                      ...scale(-1.5 / 7),
-                      color: "grey",
+                      ...scale(1 / 5),
+                      color: "#666666",
                     }}
                     dangerouslySetInnerHTML={{
                       __html: node.frontmatter.description || node.excerpt,
