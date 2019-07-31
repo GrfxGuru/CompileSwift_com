@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import { scale, rhythm } from "../utils/typography"
+import { scale } from "../utils/typography"
 
 const menuItems = [
   {
@@ -39,7 +39,7 @@ function Menu() {
             letterSpacing: 1,
             color: "white",
             ...scale(0 / 5),
-            marginRight: rhythm(1),
+            marginRight: 20,
           }}
           to={m.path}
         >
