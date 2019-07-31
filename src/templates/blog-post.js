@@ -12,7 +12,7 @@ import ShortBio from "../components/ShortBio"
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
-    const { title, disqusShortname } = this.props.data.site.siteMetadata
+    const { title } = this.props.data.site.siteMetadata
     const maxWidth = rhythm(27)
     return (
       <Layout location={this.props.location} title={title}>
@@ -90,10 +90,10 @@ class BlogPostTemplate extends React.Component {
               }}
             >
               <Disqus.DiscussionEmbed
-                shortname={disqusShortname}
+                shortname={"compileswift.disqus.com"}
                 config={{
                   url: this.props.location.href,
-                  identifier: this.props.location.pathname,
+                  identifier: post.id,
                   title: post.frontmatter.title,
                 }}
               />
