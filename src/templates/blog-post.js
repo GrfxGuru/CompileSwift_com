@@ -1,6 +1,5 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Disqus from "disqus-react"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
@@ -72,32 +71,6 @@ class BlogPostTemplate extends React.Component {
               maxWidth: maxWidth,
             }}
           >
-            <p
-              style={{
-                ...scale(-1 / 5),
-                fontWeight: "bold",
-                color: "grey",
-              }}
-            >
-              Responses
-            </p>
-            <div
-              style={{
-                backgroundColor: "#ffffff",
-                padding: rhythm(1),
-                border: "1px solid #E3E3E3",
-                borderRadius: rhythm(1 / 5),
-              }}
-            >
-              <Disqus.DiscussionEmbed
-                shortname={"compileswift.disqus.com"}
-                config={{
-                  url: this.props.location.href,
-                  identifier: post.id,
-                  title: post.frontmatter.title,
-                }}
-              />
-            </div>
           </div>
         </div>
       </Layout>
