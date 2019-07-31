@@ -19,6 +19,7 @@ class Layout extends React.Component {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
+          flexDirection: "column",
         }}
       >
         <Link
@@ -37,13 +38,13 @@ class Layout extends React.Component {
               ...scale(2 / 2.25),
               fontWeight: "bold",
               marginLeft: 20,
-              marginRight: 80,
               marginTop: 5,
             }}
           >
             {title}
           </h1>
         </Link>
+        <br/>
         <Menu />
       </div>
     )
