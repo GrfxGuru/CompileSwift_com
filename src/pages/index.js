@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -29,32 +29,38 @@ class BlogIndex extends React.Component {
             paddingRight: rhythm(1),
           }}
         >
-          <div style={{ maxWidth: maxWidth }}>
-            <h3 style={{textAlign: "center", fontWeight: "bold"}}>Work in progress, please be patient</h3>
+          <div style={{ maxWidth: maxWidth, marginTop: 20 }}>
             {posts.map(({ node }) => {
               const title = node.frontmatter.title || node.fields.slug
               return (
-                <div key={node.fields.slug}>
+                <Link
+                  style={{
+                    boxShadow: `none`,
+                    color: "#000000",
+                    fontWeight: "bold",
+                  }}
+                  to={node.fields.slug}
+                >
+                  <div key={node.fields.slug} style={{
+                    borderWidth: 1,
+                    borderStyle: "solid", borderRadius: 10, borderColor: "#e65812",
+                    marginTop: 20,
+                    marginBottom: 20, paddingLeft: 10, paddingRight: 10,
+                    boxShadow: "0px 0px 10px 2px rgba(176,176,176,0.5)",
+                    backgroundColor: "#ffffff",
+                  }}>
                   <h3
                     style={{
                       ...scale(1 / 1.5),
                       marginBottom: rhythm(1 / 4),
+                      marginTop: 3,
                     }}
                   >
-                    <Link
-                      style={{
-                        boxShadow: `none`,
-                        color: "#000000",
-                        fontWeight: "bold",
-                      }}
-                      to={node.fields.slug}
-                    >
                       {title}
-                    </Link>
                   </h3>
                   <p
                     style={{
-                      ...scale(1 / 5),
+                      ...scale(0 / 5),
                       color: "#666666",
                     }}
                     dangerouslySetInnerHTML={{
@@ -64,6 +70,8 @@ class BlogIndex extends React.Component {
                   <br />
                   <ShortBio post={node} hideAvatar hideAuthor />
                 </div>
+                </Link>
+
               )
             })}
           </div>
