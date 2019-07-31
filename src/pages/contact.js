@@ -85,7 +85,7 @@ export default class Index extends React.Component {
                     onChange={this.handleChange}
                     id={"name"}
                     required={true}
-                    style={{ width: "400px" }}
+                    style={{ width: "350px" }}
                   />
                 </div>
               </div>
@@ -101,7 +101,7 @@ export default class Index extends React.Component {
                     onChange={this.handleChange}
                     id={"email"}
                     required={true}
-                    style={{ width: "400px" }}
+                    style={{ width: "350px" }}
                   />
                 </div>
               </div>
@@ -116,16 +116,17 @@ export default class Index extends React.Component {
                     onChange={this.handleChange}
                     id={"message"}
                     required={true}
-                    style={{ width: "400px", height: "400px" }}
+                    style={{ width: "350px", height: "400px" }}
                   />
                 </div>
               </div>
               <br/>
               <div className="field">
                 <button className="button is-link" type="submit" style={{
-                  width: 400,
-                  height: 50, backgroundColor: "#f57738", borderStyle: "solid",
-                  color: "white", fontWeight: "bold", borderColor: "#f57738"}}>
+                  width: 350, height: 50, backgroundColor: "#f57738",
+                  borderStyle: "solid", color: "white", fontWeight: "bold",
+                  borderColor: "#f57738",
+                }}>
                   Send
                 </button>
               </div>
