@@ -62,6 +62,7 @@ class BlogIndex extends React.Component {
                     style={{
                       ...scale(0 / 5),
                       color: "#666666",
+                      fontWeight: "normal",
                     }}
                     dangerouslySetInnerHTML={{
                       __html: node.frontmatter.description || node.excerpt,
