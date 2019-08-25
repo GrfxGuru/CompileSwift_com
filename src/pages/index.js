@@ -36,18 +36,17 @@ class BlogIndex extends React.Component {
                 <Link
                   style={{
                     boxShadow: `none`,
-                    color: "#000000",
+                    color: "#ffffff",
                     fontWeight: "bold",
                   }}
                   to={node.fields.slug}
                 >
                   <div key={node.fields.slug} style={{
-                    borderWidth: 1,
-                    borderStyle: "solid", borderRadius: 10, borderColor: "#e65812",
+                    borderStyle: "none", borderRadius: 10,
                     marginTop: 20,
                     marginBottom: 20, paddingLeft: 10, paddingRight: 10,
-                    boxShadow: "0px 0px 10px 2px rgba(176,176,176,0.5)",
-                    backgroundColor: "#ffffff",
+                    boxShadow: "0px 0px 10px 0 rgba(0,0,0,0.3)",
+                    backgroundColor: "rgb(44, 70, 103)",
                   }}>
                   <h3
                     style={{
@@ -61,7 +60,7 @@ class BlogIndex extends React.Component {
                   <p
                     style={{
                       ...scale(0 / 5),
-                      color: "#666666",
+                      color: "white",
                       fontWeight: "normal",
                     }}
                     dangerouslySetInnerHTML={{
