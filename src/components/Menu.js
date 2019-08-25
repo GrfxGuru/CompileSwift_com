@@ -54,8 +54,8 @@ function Menu() {
         color: "white",
         ...scale(0 / 5),
         marginRight: 20,
-      }} href={"https://mailchi.mp/9e0f70c40b39/cswift"}> MAILING LIST</a>
-        </div>
+      }} href={"https://mailchi.mp/9e0f70c40b39/cswift"}>MAILING LIST</a>
+    </div>
   )
 }
 
