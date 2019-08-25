@@ -24,12 +24,17 @@ class BlogIndex extends React.Component {
           style={{
             width: "100%",
             display: "flex",
+            flexFlow: "row nowrap",
+            alignItems: "center",
             justifyContent: "center",
             paddingLeft: rhythm(1),
             paddingRight: rhythm(1),
           }}
         >
-          <div style={{ maxWidth: maxWidth, marginTop: 20 }}>
+          <div style={{
+            width: "100%", marginTop: 20,
+            flexDirection: "row", display: "flex", flexWrap: "wrap", justifyContent: "center",
+          }}>
             {posts.map(({ node }) => {
               const title = node.frontmatter.title || node.fields.slug
               return (
@@ -42,9 +47,13 @@ class BlogIndex extends React.Component {
                   to={node.fields.slug}
                 >
                   <div key={node.fields.slug} style={{
+                    maxWidth: 400,
+                    minWidth: 400,
+                    minHeight: 150,
                     borderStyle: "none", borderRadius: 10,
-                    marginTop: 20,
-                    marginBottom: 20, paddingLeft: 10, paddingRight: 10,
+                    margin: "20px 10px 20px 10px",
+                    paddingLeft: 10,
+                    paddingRight: 10,
                     boxShadow: "0px 0px 10px 0 rgba(0,0,0,0.3)",
                     backgroundColor: "rgb(44, 70, 103)",
                   }}>
