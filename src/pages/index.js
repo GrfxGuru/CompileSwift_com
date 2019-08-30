@@ -49,7 +49,8 @@ class BlogIndex extends React.Component {
                   <div key={node.fields.slug} style={{
                     maxWidth: 400,
                     minWidth: 400,
-                    minHeight: 150,
+                    minHeight: 220,
+                    maxHeight: 220,
                     borderStyle: "none", borderRadius: 10,
                     margin: "20px 10px 20px 10px",
                     paddingLeft: 10,
