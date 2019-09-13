@@ -5,6 +5,7 @@ import { scale } from "../utils/typography"
 import CSLogo from "./cs-logo"
 
 import Menu from "./Menu"
+import SocialLinks from "../components/SocialLinks"
 
 class Layout extends React.Component {
   render() {
@@ -45,6 +46,7 @@ class Layout extends React.Component {
           </h1>
         </Link>
         <br/>
+        <SocialLinks/>
         <Menu />
       </div>
     )
