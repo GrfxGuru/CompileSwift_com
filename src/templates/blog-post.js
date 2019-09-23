@@ -7,6 +7,7 @@ import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 import RecentPosts from "../components/RecentPosts"
 import ShortBio from "../components/ShortBio"
+import Sidebar from "../components/Sidebar"
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -45,6 +46,7 @@ class BlogPostTemplate extends React.Component {
                 marginBottom: rhythm(1),
               }}
             />
+            <Sidebar/>
             <Bio />
             <br/>
           </div>
