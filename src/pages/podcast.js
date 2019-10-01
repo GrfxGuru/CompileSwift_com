@@ -13,7 +13,7 @@ class PodcastIndex extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO title='About' keywords={[`blog`, `gatsby`, `javascript`, `react`]} />
+        <SEO title='Podcast' keywords={[`blog`, `gatsby`, `javascript`, `react`]} />
         <div style={{ width: '100%', display: 'flex', justifyContent: 'center', paddingLeft: rhythm(1), paddingRight: rhythm(1) }}>
           <div style={{ maxWidth: maxWidth }}>
             <br/>

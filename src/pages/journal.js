@@ -14,7 +14,7 @@ class PodcastEpisodeList extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO title='About' keywords={[`blog`, `swift`, `podcast`]} />
+        <SEO title='Development Journal' keywords={[`blog`, `swift`, `podcast`]} />
         <div style={{ width: '100%', display: 'flex', justifyContent: 'center', paddingLeft: rhythm(1), paddingRight: rhythm(1) }}>
         <div style={{
             width: "100%", marginTop: 20,
