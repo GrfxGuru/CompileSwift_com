@@ -1,0 +1,25 @@
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+        color: white;
+    }
+
+    body a {
+        color: cornflowerblue;
+    }
+
+    .recentPostsSection {
+        background-color: black;
+        color: white;
+    }
+
+    .recentPostCard {
+        background-color: rgb(42, 42, 42);
+        border-style: solid;
+        border-width: 2px;
+        border-color: rgb(70, 70, 70);
+    }
+
+    .recentPostCard a {
+        color: cornflowerblue;
+    }}

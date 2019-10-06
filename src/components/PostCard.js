@@ -11,7 +11,6 @@ function PostCard({ data }) {
   return (
     <div
       style={{
-        background: "#fff",
         minWidth: 300,
         maxWidth: 350,
         marginTop: rhythm(1),
@@ -20,6 +19,7 @@ function PostCard({ data }) {
         borderRadius: rhythm(1 / 5),
         boxShadow: "0 4px 8px 0 rgba(0,0,0,0.05)",
       }}
+      class={"recentPostCard"}
     >
       <span
         style={{
@@ -35,7 +35,6 @@ function PostCard({ data }) {
           style={{
             fontWeight: "bold",
             ...scale(2 / 5),
-            color: "#000000",
           }}
         >
           {title}
@@ -46,7 +45,6 @@ function PostCard({ data }) {
       <p
         style={{
           ...scale(-1.5 / 5),
-          color: "grey",
         }}
       >
         {excerpt.substring(0, 100) + "..."}

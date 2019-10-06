@@ -28,7 +28,7 @@ function RecentPosts() {
           >
             {posts.map(p => (
               <div key={p.node.fields.slug}>
-                <PostCard data={p.node} />
+                <PostCard data={p.node}/>
               </div>
             ))}
           </div>

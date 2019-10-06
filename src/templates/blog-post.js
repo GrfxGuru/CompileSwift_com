@@ -54,13 +54,13 @@ class BlogPostTemplate extends React.Component {
         <br />
         <div
           style={{
-            backgroundColor: "#fafafa",
             width: "100%",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
             padding: rhythm(1.5),
           }}
+          class={"recentPostsSection"}
         >
           <RecentPosts />
           <br />

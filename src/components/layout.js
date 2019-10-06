@@ -7,6 +7,8 @@ import CSLogo from "./cs-logo"
 import Menu from "./Menu"
 import SocialLinks from "../components/SocialLinks"
 
+import "../assets/darkmode.css"
+
 class Layout extends React.Component {
   render() {
     const { title, children } = this.props
