@@ -1,8 +1,9 @@
 import React from "react"
 import { scale, rhythm } from "../utils/typography"
 import { Link } from "gatsby"
+import { white } from "ansi-colors"
 
-function StaticPostCard({ title, summary, url }) {
+function StaticPostCard({ title, summary, url, watermarkImage }) {
   return (
     <Link
       style={{
@@ -46,6 +47,10 @@ function StaticPostCard({ title, summary, url }) {
         >
           {summary}
         </p>
+        <img
+          src={watermarkImage}
+          style={{ maxWidth: 100, float: "right", opacity: 0.3 }}
+        />
         <br />
       </div>
     </Link>

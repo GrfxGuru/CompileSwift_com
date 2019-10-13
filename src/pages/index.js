@@ -6,6 +6,9 @@ import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 import ShortBio from "../components/ShortBio"
 import StaticPostCard from "../components/StaticPostCard"
+import VideoWatermarkImage from "../assets/icon-video.svg"
+import BlogWatermarkImage from "../assets/icon-blog.svg"
+import PodcastWatermarkImage from "../assets/icon-podcast.svg"
 
 class BlogIndex extends React.Component {
   render() {
@@ -110,16 +113,19 @@ class BlogIndex extends React.Component {
               title="Podcast Episodes"
               summary="Click here to see all the podcast episodes."
               url="/episodes"
+              watermarkImage={PodcastWatermarkImage}
             />
             <StaticPostCard
               title="Videos"
               summary="Click here to see a list of available videos."
               url="/videos"
+              watermarkImage={VideoWatermarkImage}
             />
             <StaticPostCard
               title="Journal and Blog"
               summary="Click here to see older journal and blog blog entries."
               url="/journal"
+              watermarkImage={BlogWatermarkImage}
             />
           </div>
         </div>
