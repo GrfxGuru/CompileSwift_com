@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 import ShortBio from "../components/ShortBio"
+import StaticPostCard from "../components/StaticPostCard"
 
 class BlogIndex extends React.Component {
   render() {
@@ -17,8 +18,20 @@ class BlogIndex extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
           title="Welcome"
-          keywords={[`blog`, `gatsby`, `javascript`, `react`, 'swift', 'development',
-          'ios', 'macos', 'watchos', 'podcast', 'programming', 'software']}
+          keywords={[
+            `blog`,
+            `gatsby`,
+            `javascript`,
+            `react`,
+            "swift",
+            "development",
+            "ios",
+            "macos",
+            "watchos",
+            "podcast",
+            "programming",
+            "software",
+          ]}
         />
         <div
           style={{
@@ -31,10 +44,16 @@ class BlogIndex extends React.Component {
             paddingRight: rhythm(1),
           }}
         >
-          <div style={{
-            width: "100%", marginTop: 20,
-            flexDirection: "row", display: "flex", flexWrap: "wrap", justifyContent: "center",
-          }}>
+          <div
+            style={{
+              width: "100%",
+              marginTop: 20,
+              flexDirection: "row",
+              display: "flex",
+              flexWrap: "wrap",
+              justifyContent: "center",
+            }}
+          >
             {posts.map(({ node }) => {
               const title = node.frontmatter.title || node.fields.slug
               return (
@@ -46,44 +65,62 @@ class BlogIndex extends React.Component {
                   }}
                   to={node.fields.slug}
                 >
-                  <div key={node.fields.slug} style={{
-                    maxWidth: 400,
-                    minWidth: 400,
-                    minHeight: 220,
-                    maxHeight: 220,
-                    borderStyle: "none", borderRadius: 10,
-                    margin: "20px 10px 20px 10px",
-                    paddingLeft: 10,
-                    paddingRight: 10,
-                    boxShadow: "0px 0px 10px 0 rgba(0,0,0,0.3)",
-                    backgroundColor: "rgb(44, 70, 103)",
-                  }}>
-                  <h3
+                  <div
+                    key={node.fields.slug}
                     style={{
-                      ...scale(1 / 1.7),
-                      marginBottom: rhythm(1 / 4),
-                      marginTop: 3,
+                      maxWidth: 400,
+                      minWidth: 400,
+                      minHeight: 220,
+                      maxHeight: 220,
+                      borderStyle: "none",
+                      borderRadius: 10,
+                      margin: "20px 10px 20px 10px",
+                      paddingLeft: 10,
+                      paddingRight: 10,
+                      boxShadow: "0px 0px 10px 0 rgba(0,0,0,0.3)",
+                      backgroundColor: "rgb(44, 70, 103)",
                     }}
                   >
+                    <h3
+                      style={{
+                        ...scale(1 / 1.7),
+                        marginBottom: rhythm(1 / 4),
+                        marginTop: 3,
+                      }}
+                    >
                       {title}
-                  </h3>
-                  <p
-                    style={{
-                      ...scale(0 / 5),
-                      color: "white",
-                      fontWeight: "normal",
-                    }}
-                    dangerouslySetInnerHTML={{
-                      __html: node.frontmatter.description || node.excerpt,
-                    }}
-                  />
-                  <br />
-                  <ShortBio post={node} hideAvatar hideAuthor />
-                </div>
+                    </h3>
+                    <p
+                      style={{
+                        ...scale(0 / 5),
+                        color: "white",
+                        fontWeight: "normal",
+                      }}
+                      dangerouslySetInnerHTML={{
+                        __html: node.frontmatter.description || node.excerpt,
+                      }}
+                    />
+                    <br />
+                    <ShortBio post={node} hideAvatar hideAuthor />
+                  </div>
                 </Link>
-
               )
             })}
+            <StaticPostCard
+              title="Podcast Episodes"
+              summary="Click here to see all the podcast episodes."
+              url="/episodes"
+            />
+            <StaticPostCard
+              title="Videos"
+              summary="Click here to see a list of available videos."
+              url="/videos"
+            />
+            <StaticPostCard
+              title="Journal and Blog"
+              summary="Click here to see older journal and blog blog entries."
+              url="/journal"
+            />
           </div>
         </div>
       </Layout>
@@ -100,7 +137,10 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      limit: 3
+    ) {
       edges {
         node {
           excerpt
