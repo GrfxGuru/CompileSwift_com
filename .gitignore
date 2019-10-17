@@ -68,3 +68,6 @@ yarn-error.log
 # Yarn Integrity file
 .yarn-integrity
 /.idea
+content/blog/.Ulysses-Group.plist
+content/blog/podcast/.Ulysses-Group.plist
+.gitignore
