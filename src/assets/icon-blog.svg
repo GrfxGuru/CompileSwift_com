@@ -1,51 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-    <g transform="matrix(1,0,0,1,17.1121,2.80171)">
-        <rect x="132.099" y="109.132" width="213.577" height="293.736" style="fill:white;"/>
-    </g>
-    <g>
-        <g transform="matrix(0.538414,0,0,1,72.2766,-24.9552)">
-            <rect x="166.788" y="191.567" width="184.97" height="11.411" style="fill-opacity:0.5;"/>
-        </g>
-        <g transform="matrix(1,0,0,1,-4.7103,-4.95515)">
-            <rect x="166.788" y="191.567" width="184.97" height="11.411" style="fill-opacity:0.5;"/>
-        </g>
-        <g transform="matrix(0.187038,0,0,4.50542,130.882,-656.478)">
-            <rect x="166.788" y="191.567" width="184.97" height="11.411" style="fill-opacity:0.5;"/>
-        </g>
-        <g transform="matrix(0.77692,0,0,1,73.7598,15.0448)">
-            <rect x="166.788" y="191.567" width="184.97" height="11.411" style="fill-opacity:0.5;"/>
-        </g>
-        <g transform="matrix(0.77692,0,0,1,73.7598,35.0448)">
-            <rect x="166.788" y="191.567" width="184.97" height="11.411" style="fill-opacity:0.5;"/>
-        </g>
-        <g transform="matrix(0.77692,0,0,1,73.7598,55.0448)">
-            <rect x="166.788" y="191.567" width="184.97" height="11.411" style="fill-opacity:0.5;"/>
-        </g>
-        <g transform="matrix(1,0,0,1,-4.7103,75.0448)">
-            <rect x="166.788" y="191.567" width="184.97" height="11.411" style="fill-opacity:0.5;"/>
-        </g>
-        <g transform="matrix(1,0,0,1,-4.7103,95.0448)">
-            <rect x="166.788" y="191.567" width="184.97" height="11.411" style="fill-opacity:0.5;"/>
-        </g>
-        <g transform="matrix(0.381992,0,0,1,212.679,115.045)">
-            <rect x="166.788" y="191.567" width="184.97" height="11.411" style="fill-opacity:0.5;"/>
-        </g>
-        <g transform="matrix(0.618008,0,0,1,59.0014,115.045)">
-            <rect x="166.788" y="191.567" width="184.97" height="11.411" style="fill-opacity:0.5;"/>
-        </g>
-        <g transform="matrix(0.618008,0,0,1,59.0014,135.045)">
-            <rect x="166.788" y="191.567" width="184.97" height="11.411" style="fill-opacity:0.5;"/>
-        </g>
-        <g transform="matrix(0.618008,0,0,1,59.0014,155.045)">
-            <rect x="166.788" y="191.567" width="184.97" height="11.411" style="fill-opacity:0.5;"/>
-        </g>
-        <g transform="matrix(0.341625,0,0,2.77799,226.878,-205.559)">
-            <rect x="166.788" y="191.567" width="184.97" height="11.411" style="fill-opacity:0.5;"/>
-        </g>
-        <g transform="matrix(1,0,0,1,-4.7103,175.045)">
-            <rect x="166.788" y="191.567" width="184.97" height="11.411" style="fill-opacity:0.5;"/>
-        </g>
-    </g>
+<svg width="100" height="100" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<rect width="24" height="24" fill="none" rx="0" ry="0">
+	</rect>
+	<path fill-rule="evenodd" clip-rule="evenodd" d="M9.22817 2.5H18.0282C18.0682 2.5 18.1082 2.5 18.1482 2.51C18.3082 2.51 18.4682 2.52 18.6282 2.54V17.9C18.6282 19.88 17.0182 21.5 15.0282 21.5H6.22817C6.18817 21.5 6.14817 21.5 6.10817 21.49C5.94817 21.49 5.78817 21.48 5.62817 21.46V6.1C5.62817 4.12 7.23817 2.5 9.22817 2.5ZM19.8281 7.70012V2.87012C21.4781 3.57012 22.6281 5.20012 22.6281 7.10012C22.6281 7.43012 22.3581 7.70012 22.0281 7.70012H19.8281ZM1.62817 16.9C1.62817 18.8 2.77817 20.43 4.42817 21.14V16.3H2.22817C1.89817 16.3 1.62817 16.57 1.62817 16.9ZM9.27817 8.95H14.9782C15.1982 8.95 15.3782 8.77 15.3782 8.55V8.15C15.3782 7.93 15.1982 7.75 14.9782 7.75H9.27817C9.05817 7.75 8.87817 7.93 8.87817 8.15V8.55C8.87817 8.77 9.05817 8.95 9.27817 8.95ZM9.27817 12.5999H14.9782C15.1982 12.5999 15.3782 12.4199 15.3782 12.1999V11.7999C15.3782 11.5799 15.1982 11.3999 14.9782 11.3999H9.27817C9.05817 11.3999 8.87817 11.5799 8.87817 11.7999V12.1999C8.87817 12.4199 9.05817 12.5999 9.27817 12.5999ZM14.9782 16.25H9.27817C9.05817 16.25 8.87817 16.07 8.87817 15.85V15.45C8.87817 15.23 9.05817 15.05 9.27817 15.05H14.9782C15.1982 15.05 15.3782 15.23 15.3782 15.45V15.85C15.3782 16.07 15.1982 16.25 14.9782 16.25Z" fill="#ffffff">
+	</path>
 </svg>

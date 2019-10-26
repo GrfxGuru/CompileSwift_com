@@ -1,10 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-    <g transform="matrix(0.892718,0,0,0.892718,-1.6528,-42.7902)">
-        <rect x="60.034" y="170.179" width="329.035" height="329.035" style="fill:white;"/>
-    </g>
-    <g transform="matrix(6.12323e-17,-1,1,6.12323e-17,204.059,603.416)">
-        <path d="M347.416,-5.251L478.041,256L216.79,256L347.416,-5.251Z" style="fill:white;"/>
-    </g>
+<svg width="100" height="100" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<rect width="24" height="24" fill="none" rx="0" ry="0">
+	</rect>
+	<path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3 3.44772 3.44772 3 4 3H20C20.5523 3 21 3.44772 21 4V16C21 16.5523 20.5523 17 20 17H4C3.44772 17 3 16.5523 3 16V4ZM8.6 17.8C8.26863 17.8 8 18.0686 8 18.4C8 18.7314 8.26863 19 8.6 19H15.4C15.7314 19 16 18.7314 16 18.4C16 18.0686 15.7314 17.8 15.4 17.8H8.6ZM5.6 19.8C5.26863 19.8 5 20.0686 5 20.4C5 20.7314 5.26863 21 5.6 21H18.4C18.7314 21 19 20.7314 19 20.4C19 20.0686 18.7314 19.8 18.4 19.8H5.6ZM9.74807 6.42747C9.41474 6.23699 9 6.47768 9 6.86159V13.1384C9 13.5223 9.41474 13.763 9.74807 13.5725L15.2403 10.4341C15.5762 10.2422 15.5762 9.75783 15.2403 9.56588L9.74807 6.42747Z" fill="#ffffff">
+	</path>
 </svg>
