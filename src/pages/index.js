@@ -57,6 +57,55 @@ class BlogIndex extends React.Component {
               justifyContent: "center",
             }}
           >
+            <div
+              style={{
+                width: "100%",
+                marginTop: 20,
+                flexDirection: "row",
+                display: "flex",
+                flexWrap: "wrap",
+                justifyContent: "center",
+              }}
+            >
+              <p
+                style={{ fontWeight: "bold", paddingRight: 10, paddingTop: 3 }}
+              >
+                Search:{" "}
+              </p>
+              <form method="get" id="search" action="https://duckduckgo.com/">
+                <input type="hidden" name="sites" value="compileswift.com" />
+                <input type="hidden" name="k8" value="#444444" />
+                <input type="hidden" name="k9" value="#ee4792" />
+                <input type="hidden" name="kt" value="h" />
+                <input
+                  class="field"
+                  type="text"
+                  name="q"
+                  maxlength="255"
+                  placeholder="To search, type and hit Enter…"
+                  style={{
+                    width: 250,
+                    borderRadius: 6,
+                    borderStyle: "solid",
+                    borderColor: "rgb(245, 119, 56)",
+                    paddingLeft: 4,
+                    paddingRight: 4,
+                  }}
+                />
+                <input
+                  type="submit"
+                  value="Search"
+                  style={{
+                    marginLeft: 10,
+                    borderRadius: 6,
+                    borderStyle: "solid",
+                    backgroundColor: "rgb(245, 119, 56)",
+                    borderColor: "rgb(245, 119, 56)",
+                    color: "White",
+                  }}
+                />
+              </form>
+            </div>
             {posts.map(({ node }) => {
               const title = node.frontmatter.title || node.fields.slug
               return (
