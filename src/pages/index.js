@@ -9,6 +9,7 @@ import StaticPostCard from "../components/StaticPostCard"
 import VideoWatermarkImage from "../assets/icon-video.svg"
 import BlogWatermarkImage from "../assets/icon-blog.svg"
 import PodcastWatermarkImage from "../assets/icon-podcast.svg"
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 class BlogIndex extends React.Component {
   render() {
@@ -24,8 +25,7 @@ class BlogIndex extends React.Component {
           keywords={[
             `blog`,
             `gatsby`,
-            `javascript`,
-            `react`,
+            `swiftui`,
             "swift",
             "development",
             "ios",
@@ -176,6 +176,10 @@ class BlogIndex extends React.Component {
               url="/journal"
               watermarkImage={BlogWatermarkImage}
             />
+            <a href={"https://patreon.com/pwcom"}>
+              <h3>Subscribe for Exclusive Content on Patreon</h3>
+              <img src={"/images/patreon-subscriber-banner.svg"} style={{ maxWidth: 700}}/>
+            </a>
           </div>
         </div>
       </Layout>
