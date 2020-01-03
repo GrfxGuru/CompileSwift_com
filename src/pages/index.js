@@ -26,14 +26,14 @@ class BlogIndex extends React.Component {
             `blog`,
             `gatsby`,
             `swiftui`,
-            "swift",
-            "development",
-            "ios",
-            "macos",
-            "watchos",
-            "podcast",
-            "programming",
-            "software",
+            `swift`,
+            `development`,
+            `ios`,
+            `macos`,
+            `watchos`,
+            `podcast`,
+            `programming`,
+            `software`,
           ]}
         />
         <div
@@ -65,8 +65,12 @@ class BlogIndex extends React.Component {
                 display: "flex",
                 flexWrap: "wrap",
                 justifyContent: "center",
+                alignItems: "center"
               }}
             >
+              <div style={{paddingRight: 50,}}>
+              <iframe src="https://anchor.fm/compileswift/embed" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
+              </div>
               <p
                 style={{ fontWeight: "bold", paddingRight: 10, paddingTop: 3 }}
               >
@@ -176,11 +180,20 @@ class BlogIndex extends React.Component {
               url="/journal"
               watermarkImage={BlogWatermarkImage}
             />
-            <a href={"https://patreon.com/pwcom"}>
-              <h3>Subscribe for Exclusive Content on Patreon</h3>
-              <img src={"/images/patreon-subscriber-banner.svg"} style={{ maxWidth: 700}}/>
-            </a>
           </div>
+        </div>
+        <div style={{
+          width: "100%",
+          display: "flex",
+          flexFlow: "row nowrap",
+          alignItems: "center",
+          justifyContent: "center",
+          paddingLeft: rhythm(1),
+          paddingRight: rhythm(1),}}>
+          <a href={"https://patreon.com/pwcom"}>
+            <h3>Subscribe for Exclusive Content on Patreon</h3>
+            <img src={"/images/patreon-subscriber-banner.svg"} style={{ maxWidth: 700}}/>
+          </a>
         </div>
       </Layout>
     )
