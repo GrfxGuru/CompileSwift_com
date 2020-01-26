@@ -28,7 +28,7 @@ function RecentPosts() {
           >
             {posts.map(p => (
               <div key={p.node.fields.slug}>
-                <PostCard data={p.node}/>
+                <PostCard data={p.node} />
               </div>
             ))}
           </div>
@@ -48,7 +48,10 @@ const recentPostsQuery = graphql`
       }
     }
 
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      limit: 6
+    ) {
       edges {
         node {
           excerpt
