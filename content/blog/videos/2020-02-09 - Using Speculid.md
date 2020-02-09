@@ -17,4 +17,4 @@ Using the steps in this video you can have the assets generate everytime you run
 
 With just one SVG file I generate all the icon sizes I need for an iOS application and apply them in the Asset catalog automatically.
 
-You can [just straight to Speculid](https://speculid.com) here to read the documentation and install.
+You can [jump straight to Speculid](https://speculid.com) here to read the documentation and install.
