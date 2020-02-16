@@ -1,25 +1,58 @@
 @media (prefers-color-scheme: dark) {
-    body {
-        background-color: black;
-        color: white;
-    }
+  body {
+    background-color: black;
+    color: white;
+  }
 
-    body a {
-        color: cornflowerblue;
-    }
+  body a {
+    color: cornflowerblue;
+  }
 
-    .recentPostsSection {
-        background-color: black;
-        color: white;
-    }
+  .recentPostsSection {
+    background-color: black;
+    color: white;
+  }
 
-    .recentPostCard {
-        background-color: rgb(42, 42, 42);
-        border-style: solid;
-        border-width: 2px;
-        border-color: rgb(70, 70, 70);
-    }
+  .recentPostCard {
+    background-color: rgb(42, 42, 42);
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(70, 70, 70);
+  }
 
-    .recentPostCard a {
-        color: cornflowerblue;
-    }}
+  .recentPostCard a {
+    color: cornflowerblue;
+  }
+
+  .gatsby-highlight pre {
+    background-color: rgb(13, 13, 5) !important;
+  }
+}
+
+.gatsby-highlight-code-line {
+  display: block;
+  margin-right: -1em;
+  margin-left: -1em;
+  padding-right: 1em;
+  padding-left: 0.75em;
+  border-left: 0.25em solid #f99;
+}
+
+.gatsby-highlight {
+  border-radius: 0.3em;
+  margin: 0.2em 0;
+  padding: 1em;
+  overflow: auto;
+  font-size: 0.9em;
+  background-color: transparent;
+  overflow: initial;
+  float: left;
+  min-width: 99%;
+  max-width: 99%;
+}
+
+@media (max-width: 780px) {
+  .gatsby-highlight {
+    padding: 0.5em;
+  }
+}
