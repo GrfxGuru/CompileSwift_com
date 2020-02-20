@@ -50,8 +50,15 @@ module.exports = {
           {
             resolve: "gatsby-transformer-remark",
             options: {
-              plugins: ["@weknow/gatsby-remark-twitter"]
-            }
+              plugins: [
+              {
+                resolve: "@weknow/gatsby-remark-twitter",
+                options: {
+                  align: 'center'
+                }
+              }
+            ]
+           }
           }
         ],
       },
