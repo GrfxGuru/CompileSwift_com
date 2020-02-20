@@ -6,7 +6,7 @@ module.exports = {
     siteUrl: `https://compileswift.com`,
     social: {
       twitter: `CompileSwift`,
-      instagram: `grfxmedia`,
+      instagram: `compileswift`,
     },
     disqusShortname: "PeterWitham",
   },
@@ -47,6 +47,12 @@ module.exports = {
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
+          {
+            resolve: "gatsby-transformer-remark",
+            options: {
+              plugins: ["@weknow/gatsby-remark-twitter"]
+            }
+          }
         ],
       },
     },
