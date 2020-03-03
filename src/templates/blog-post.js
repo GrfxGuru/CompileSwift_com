@@ -39,16 +39,16 @@ class BlogPostTemplate extends React.Component {
             </h1>
             <ShortBio post={post} />
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
-            <br/>
-            <br/>
+            <br />
+            <br />
             <hr
               style={{
                 marginBottom: rhythm(1),
               }}
             />
-            <Sidebar/>
+            <Sidebar />
             <Bio />
-            <br/>
+            <br />
           </div>
         </div>
         <br />
@@ -59,7 +59,6 @@ class BlogPostTemplate extends React.Component {
             flexDirection: "column",
             alignItems: "center",
             padding: rhythm(1.5),
-            flexBasis: '80%',
           }}
           class={"recentPostsSection"}
         >
@@ -73,8 +72,7 @@ class BlogPostTemplate extends React.Component {
               flexDirection: "column",
               maxWidth: maxWidth,
             }}
-          >
-          </div>
+          ></div>
         </div>
       </Layout>
     )
