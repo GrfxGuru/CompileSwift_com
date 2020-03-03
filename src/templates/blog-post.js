@@ -59,6 +59,7 @@ class BlogPostTemplate extends React.Component {
             flexDirection: "column",
             alignItems: "center",
             padding: rhythm(1.5),
+            flexBasis: '80%',
           }}
           class={"recentPostsSection"}
         >
