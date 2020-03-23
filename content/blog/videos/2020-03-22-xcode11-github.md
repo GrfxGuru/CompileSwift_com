@@ -1,12 +1,13 @@
 ---
 templateKey: blog-post
-slug: 
+slug:
 author: Peter Witham
-tags: ["Videos", "Xcode", "Source Control"]
+tags: ["Video", "Xcode", "Source Control"]
 title: How to use GitHub with Xcode 11
 date: 2020-03-22T23:08:19
 description: GitHub and Xcode 11 are almost the best of friends.
 ---
+
 Xcode 11 and GitHub have come a long way in their relationship, we can now work directly with GitHub repositories in the source control features of Xcode. This is a great time saver for workflows.
 
 In this video I’ll show you how to set up Xcode and GitHub to work together and get you up and running with that safe good practice we call source control.
