@@ -29,7 +29,7 @@ class BlogPostTemplate extends React.Component {
             paddingRight: rhythm(1),
           }}
         >
-          <div style={{ maxWidth: maxWidth }}>
+          <div style={{ maxWidth: maxWidth }} className="postContent">
             <h1
               style={{
                 ...scale(6 / 5),

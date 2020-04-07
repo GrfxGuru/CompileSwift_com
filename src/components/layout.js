@@ -47,8 +47,8 @@ class Layout extends React.Component {
             {title}
           </h1>
         </Link>
-        <br/>
-        <SocialLinks/>
+        <br />
+        <SocialLinks />
         <Menu />
       </div>
     )
