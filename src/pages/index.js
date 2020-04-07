@@ -69,7 +69,7 @@ class BlogIndex extends React.Component {
                 alignItems: "center",
               }}
             >
-              <div style={{ paddingRight: 50 }}>
+              <div style={{ clear: "both" }}>
                 <iframe
                   src="https://anchor.fm/compileswift/embed"
                   height="102px"
@@ -78,12 +78,12 @@ class BlogIndex extends React.Component {
                   scrolling="no"
                 ></iframe>
               </div>
-              <p
-                style={{ fontWeight: "bold", paddingRight: 10, paddingTop: 3 }}
+              <form
+                method="get"
+                id="search"
+                action="https://duckduckgo.com/"
+                style={{ paddingLeft: 10 }}
               >
-                Search:{" "}
-              </p>
-              <form method="get" id="search" action="https://duckduckgo.com/">
                 <input type="hidden" name="sites" value="compileswift.com" />
                 <input type="hidden" name="k8" value="#444444" />
                 <input type="hidden" name="k9" value="#ee4792" />
