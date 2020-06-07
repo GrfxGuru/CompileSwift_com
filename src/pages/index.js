@@ -24,7 +24,6 @@ class BlogIndex extends React.Component {
           title="Welcome"
           keywords={[
             `blog`,
-            `gatsby`,
             `swiftui`,
             `swift`,
             `development`,
@@ -61,7 +60,7 @@ class BlogIndex extends React.Component {
             <div
               style={{
                 width: "100%",
-                marginTop: 20,
+                marginTop: 10,
                 flexDirection: "row",
                 display: "flex",
                 flexWrap: "wrap",
@@ -69,7 +68,26 @@ class BlogIndex extends React.Component {
                 alignItems: "center",
               }}
             >
-              <div style={{ clear: "both" }}>
+              <div
+                style={{
+                  marginBottom: 20,
+                  width: "100%",
+                  display: "flex",
+                  flexFlow: "row nowrap",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  paddingLeft: rhythm(1),
+                  paddingRight: rhythm(1),
+                }}
+              >
+                <a href={"https://patreon.com/pwcom"}>
+                  <img
+                    src={"/images/cs_patreon.png"}
+                    style={{ maxWidth: "100%" }}
+                  />
+                </a>
+              </div>
+              <div style={{ clear: "both", marginRight: 30 }}>
                 <iframe
                   src="https://anchor.fm/compileswift/embed"
                   height="102px"
@@ -188,25 +206,6 @@ class BlogIndex extends React.Component {
               watermarkImage={BlogWatermarkImage}
             />
           </div>
-        </div>
-        <div
-          style={{
-            width: "100%",
-            display: "flex",
-            flexFlow: "row nowrap",
-            alignItems: "center",
-            justifyContent: "center",
-            paddingLeft: rhythm(1),
-            paddingRight: rhythm(1),
-          }}
-        >
-          <a href={"https://patreon.com/pwcom"}>
-            <h3>Subscribe for Exclusive Content on Patreon</h3>
-            <img
-              src={"/images/patreon-subscriber-banner.svg"}
-              style={{ maxWidth: 700 }}
-            />
-          </a>
         </div>
       </Layout>
     )
