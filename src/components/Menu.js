@@ -5,12 +5,12 @@ import { scale } from "../utils/typography"
 
 const menuItems = [
   {
-    name: "Home",
-    path: "/",
-  },
-  {
     name: "Podcast",
     path: "/podcast",
+  },
+  {
+    name: "Newsletter",
+    path: "/newsletter",
   },
   {
     name: "About",

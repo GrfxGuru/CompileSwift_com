@@ -39,10 +39,7 @@ class Newsletter extends React.Component {
   render() {
     const maxWidth = rhythm(27)
     return (
-      <Layout
-        location={this.props.location}
-        title="CompileSwift.com NewsLetter"
-      >
+      <Layout location={this.props.location} title="CompileSwift.com">
         <SEO
           title="CompileSwift Newsletter"
           keywords={[`blog`, `swift`, `newsletter`]}
@@ -51,7 +48,6 @@ class Newsletter extends React.Component {
           style={{
             width: "100%",
             display: "flex",
-            justifyContent: "center",
             paddingLeft: rhythm(1),
             paddingRight: rhythm(1),
           }}
@@ -59,41 +55,75 @@ class Newsletter extends React.Component {
           <div
             style={{
               width: "100%",
-              marginTop: 20,
+              marginTop: 30,
               flexDirection: "row",
               display: "flex",
               flexWrap: "wrap",
               justifyContent: "center",
             }}
           >
-            <div>
+            <div style={{ width: "50%" }}>
               <div>
-                <p>Just enter your name and email address to signup.</p>
+                <h2>Signup for the newsletter</h2>
                 <p>
-                  You will recieve an email to confirm your permission to send
-                  you the emails.
+                  Want to stay up to date with the World of Swift and Apple
+                  development?
                 </p>
-                <p>You can unsubscribe at anytime.</p>
+                <p>
+                  This occasional email newsletter is just the thing for you.
+                </p>
+                <ul>
+                  <li>News</li>
+                  <li>Tips</li>
+                  <li>videos</li>
+                  <li>Podcast Episodes</li>
+                  <li>Useful tools and more</li>
+                </ul>
+                <p style={{ marginTop: 30 }}>
+                  You will recieve an email to confirm your permission to send
+                  you emails after submitting the form.
+                </p>
               </div>
-              <form onSubmit={this._handleSubmit}>
-                <div style={{ margin: 30 }}>
+              <form
+                onSubmit={this._handleSubmit}
+                style={{ textAlign: "Center" }}
+              >
+                <div>
                   <input
                     type="text"
                     onChange={this._handleChange}
-                    placeholder="name"
+                    placeholder="Your Name"
                     name="name"
+                    style={{ width: "350px", marginTop: 20, padding: 5 }}
                   />
                 </div>
-                <div style={{ margin: 30 }}>
+                <div>
                   <input
-                    type="email"
+                    type="Email Address"
                     onChange={this._handleChange}
                     placeholder="email"
                     name="email"
+                    style={{ width: "350px", marginTop: 20, padding: 5 }}
                   />
                 </div>
-                <input type="submit" style={{ marginLeft: 30 }} />
+                <input
+                  type="submit"
+                  style={{
+                    width: 350,
+                    height: 50,
+                    backgroundColor: "#f57738",
+                    borderStyle: "solid",
+                    color: "white",
+                    fontWeight: "bold",
+                    borderColor: "#f57738",
+                    alignItems: "center",
+                    marginTop: 30,
+                  }}
+                />
               </form>
+              <p style={{ marginTop: 40, fontSize: 14, textAlign: "center" }}>
+                You can unsubscribe at anytime.
+              </p>
             </div>
           </div>
         </div>
