@@ -106,7 +106,7 @@ class Newsletter extends React.Component {
                     style={{ width: "350px", marginTop: 20, padding: 5 }}
                   />
                 </div>
-                <input
+                <button
                   type="submit"
                   style={{
                     width: 350,
@@ -119,7 +119,17 @@ class Newsletter extends React.Component {
                     alignItems: "center",
                     marginTop: 30,
                   }}
-                />
+                >
+                  <p
+                    style={{
+                      fontWeight: "bold",
+                      fontSize: 20,
+                      marginTop: 6,
+                    }}
+                  >
+                    Submit
+                  </p>
+                </button>
               </form>
               <p style={{ marginTop: 40, fontSize: 14, textAlign: "center" }}>
                 You can unsubscribe at anytime.
