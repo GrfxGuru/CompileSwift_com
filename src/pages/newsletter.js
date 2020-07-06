@@ -3,6 +3,7 @@ import addToMailchimp from "gatsby-plugin-mailchimp"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
+import Helmet from "react-helmet"
 
 class Newsletter extends React.Component {
   state = {
@@ -40,6 +41,7 @@ class Newsletter extends React.Component {
     const maxWidth = rhythm(27)
     return (
       <Layout location={this.props.location} title="CompileSwift.com">
+        <Helmet bodyAttributes={{ style: "background-color : #2C4667" }} />
         <SEO
           title="CompileSwift Newsletter"
           keywords={[`blog`, `swift`, `newsletter`]}
@@ -62,39 +64,31 @@ class Newsletter extends React.Component {
               justifyContent: "center",
             }}
           >
-            <div style={{ width: "50%" }}>
-              <div>
-                <h2>Signup for the newsletter</h2>
-                <p>
-                  Want to stay up to date with the World of Swift and Apple
-                  development?
-                </p>
-                <p>
-                  This occasional email newsletter is just the thing for you.
-                </p>
-                <ul>
-                  <li>News</li>
-                  <li>Tips</li>
-                  <li>videos</li>
-                  <li>Podcast Episodes</li>
-                  <li>Useful tools and more</li>
-                </ul>
-                <p style={{ marginTop: 30 }}>
-                  You will recieve an email to confirm your permission to send
-                  you emails after submitting the form.
-                </p>
-              </div>
+            <div style={{ width: "50%", marginTop: 40 }}>
               <form
                 onSubmit={this._handleSubmit}
-                style={{ textAlign: "Center" }}
+                style={{
+                  textAlign: "Center",
+                  backgroundColor: "#1C2D43",
+                  borderRadius: 15,
+                  paddingTop: 20,
+                  paddingBottom: 60,
+                }}
               >
                 <div>
+                  <h2 style={{ color: "White" }}>Get the Newsletter</h2>
                   <input
                     type="text"
                     onChange={this._handleChange}
                     placeholder="Your Name"
                     name="name"
-                    style={{ width: "350px", marginTop: 20, padding: 5 }}
+                    style={{
+                      width: "350px",
+                      marginTop: 40,
+                      padding: 10,
+                      borderRadius: 10,
+                      borderWidth: 0,
+                    }}
                   />
                 </div>
                 <div>
@@ -103,7 +97,13 @@ class Newsletter extends React.Component {
                     onChange={this._handleChange}
                     placeholder="email"
                     name="email"
-                    style={{ width: "350px", marginTop: 20, padding: 5 }}
+                    style={{
+                      width: "350px",
+                      marginTop: 20,
+                      padding: 10,
+                      borderRadius: 10,
+                      borderWidth: 0,
+                    }}
                   />
                 </div>
                 <button
@@ -111,29 +111,40 @@ class Newsletter extends React.Component {
                   style={{
                     width: 350,
                     height: 50,
-                    backgroundColor: "#f57738",
+                    backgroundColor: "#079423",
                     borderStyle: "solid",
                     color: "white",
                     fontWeight: "bold",
-                    borderColor: "#f57738",
                     alignItems: "center",
                     marginTop: 30,
+                    marginBottom: 40,
+                    borderRadius: 10,
+                    borderWidth: 0,
                   }}
                 >
                   <p
                     style={{
                       fontWeight: "bold",
                       fontSize: 20,
-                      marginTop: 6,
+                      marginTop: 7,
                     }}
                   >
                     Submit
                   </p>
                 </button>
+                <p
+                  style={{
+                    margin: "0 auto",
+                    fontSize: 16,
+                    textAlign: "center",
+                    color: "#A6A6A6",
+                    width: 380,
+                  }}
+                >
+                  You will be sent a confirmation email and can unsubscribe at
+                  anytime.
+                </p>
               </form>
-              <p style={{ marginTop: 40, fontSize: 14, textAlign: "center" }}>
-                You can unsubscribe at anytime.
-              </p>
             </div>
           </div>
         </div>
