@@ -41,7 +41,6 @@ class Newsletter extends React.Component {
     const maxWidth = rhythm(27)
     return (
       <Layout location={this.props.location} title="CompileSwift.com">
-        <Helmet bodyAttributes={{ style: "background-color : #2C4667" }} />
         <SEO
           title="CompileSwift Newsletter"
           keywords={[`blog`, `swift`, `newsletter`]}
