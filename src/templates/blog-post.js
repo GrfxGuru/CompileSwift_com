@@ -30,6 +30,20 @@ class BlogPostTemplate extends React.Component {
           }}
         >
           <div style={{ maxWidth: maxWidth }} className="postContent">
+            <a href="https://pw.d.pr/yxRE7M">
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  paddingTop: 20,
+                }}
+              >
+                <img src="/images/bitrise.png" style={{ paddingRight: 10 }} />
+                <h3 style={{ marginTop: 18 }}>
+                  Automate Your Builds and Testing with Bitrise
+                </h3>
+              </div>
+            </a>
             <h1
               style={{
                 ...scale(6 / 5),
