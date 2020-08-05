@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 author: Peter Witham
-tags: ["WWDC"]
+tags: ["WWDC", "Journal"]
 title: WWDC 20 Recommended Videos for Swift Developers
 date: 2020-07-04T17:55:05
 description: There was a lot this year from WWDC, but these are the videos that I feel are a must watch for Swift developers.

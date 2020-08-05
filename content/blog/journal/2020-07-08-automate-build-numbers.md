@@ -1,8 +1,8 @@
 ---
 templateKey: blog-post
-slug: 
+slug:
 author: Peter Witham
-tags: ["Xcode", "Automation"]
+tags: ["Xcode", "Automation", "Journal"]
 title: Automate those build and version numbers for Xcode
 date: 2020-07-08T12:15:15
 description: Take the pain out of keeping those build and version numbers upto date with one simple tool.
@@ -15,6 +15,7 @@ It is important to keep version and build numbers correct. Especially for passin
 Well, Apple has a solution to help us if we dig a little and use just one command line tool to help us not have to figure out the next number and then set it in all the right places.
 
 ## Say hello to agvtool by Apple!
+
 Agvtool is a command line application that we can run to either automatically figure out the next version and / or build number for us, or use it to set the desired value for us in all the right places inside our application code.
 
 Using agvtool is very straight forward once you have ensured you have everything set up correctly in your Xcode project. So let’s work through that checklist now together.
@@ -30,6 +31,7 @@ Now find ‘Versioning System’ and make sure ‘Apple Generic’ is selected.
 Now that was not so bad was it? You are all set up to automate.
 
 ## Let automation begin
+
 When using agvtool to set the numbers you need to make sure Xcode is not open.
 
 From here on out you will be using the terminal to run the tool, so open it up now. If you are not a friend of the terminal do not worry, these steps are very easy and require no prior knowledge other than how to change to a directory using the terminal.
@@ -90,11 +92,11 @@ Updated CFBundleVersion in “my-project.xcodeproj/../my-project/Info.plist" to 
 
 ```
 
-Amazing, right? Everything worked as we hoped. If you open the project in Xcode now you will see everything has been set for us. 
+Amazing, right? Everything worked as we hoped. If you open the project in Xcode now you will see everything has been set for us.
 
 Bonus tip, to open an Xcode project (works for workspace as well) from the terminal you can just type _open_ followed by the project file name.
 
-OK, so what if you need to set a specific version for whatever reason? Well it’s simple, instead of using  _next-version_ we do it slightly differently. Why don’t we set the marketing version to 4.5 and the build number to 10.
+OK, so what if you need to set a specific version for whatever reason? Well it’s simple, instead of using _next-version_ we do it slightly differently. Why don’t we set the marketing version to 4.5 and the build number to 10.
 
 ```bash
 $agvtool new-marketing-version 4.5
@@ -116,4 +118,5 @@ Setting version of project XCodeGenDemoApp to:
 That’s it! Open the project again in Xcode and you should see the numbers we specified.
 
 ## The wrap
+
 So as you can see, we can save ourselves a lot of trouble by taking advantage of the agvtool to set and check the numbers.
