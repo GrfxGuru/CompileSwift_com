@@ -87,20 +87,26 @@ class BlogIndex extends React.Component {
                   />
                 </a>
               </div>
-              <div style={{ clear: "both", marginRight: 30 }}>
-                <iframe
-                  src="https://anchor.fm/compileswift/embed"
-                  height="102px"
-                  width="400px"
-                  frameborder="0"
-                  scrolling="no"
-                ></iframe>
-              </div>
               <form
                 method="get"
                 id="search"
                 action="https://duckduckgo.com/"
-                style={{ paddingLeft: 10 }}
+                //style={{ paddingLeft: 10 }}
+                style={{
+                  clear: "both",
+                  backgroundColor: "rgb(245, 119, 56)",
+                  borderStyle: "none",
+                  borderRadius: 10,
+                  margin: "20px 10px 20px 10px",
+                  paddingLeft: 10,
+                  paddingRight: 10,
+                  paddingTop: 10,
+                  boxShadow: "0px 0px 10px 0 rgba(0,0,0,0.3)",
+                  maxWidth: 800,
+                  minWidth: 400,
+                  minHeight: 100,
+                  maxHeight: 100,
+                }}
               >
                 <input type="hidden" name="sites" value="compileswift.com" />
                 <input type="hidden" name="k8" value="#444444" />
@@ -113,7 +119,7 @@ class BlogIndex extends React.Component {
                   maxlength="255"
                   placeholder="To search, type and hit Enter…"
                   style={{
-                    width: 250,
+                    width: 300,
                     borderRadius: 6,
                     borderStyle: "solid",
                     borderColor: "rgb(245, 119, 56)",
@@ -134,6 +140,31 @@ class BlogIndex extends React.Component {
                   }}
                 />
               </form>
+              <div
+                style={{
+                  clear: "both",
+                  backgroundColor: "rgb(245, 119, 56)",
+                  borderStyle: "none",
+                  borderRadius: 10,
+                  margin: "20px 10px 20px 10px",
+                  paddingLeft: 10,
+                  paddingRight: 10,
+                  boxShadow: "0px 0px 10px 0 rgba(0,0,0,0.3)",
+                  maxWidth: 800,
+                  minWidth: 380,
+                }}
+              >
+                <h3 style={{ color: "White", fontWeight: "Bold" }}>
+                  Play the Podcast
+                </h3>
+                <iframe
+                  src="https://anchor.fm/compileswift/embed"
+                  height="102px"
+                  width="380px"
+                  frameborder="0"
+                  scrolling="no"
+                ></iframe>
+              </div>
             </div>
             {posts.map(({ node }) => {
               const title = node.frontmatter.title || node.fields.slug
