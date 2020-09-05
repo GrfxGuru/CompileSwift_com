@@ -3,7 +3,7 @@ title: Creating a Master Detail View with Navigation
 author: Peter Witham
 featuredImage:
 date: "2019-09-29T21:44:00"
-tags: ["Video"]
+tags: ["Video", "SwiftUI"]
 description: The Master Detail view pattern is very common in applications. This video explains how to create just that using SwiftUI
 ---
 
