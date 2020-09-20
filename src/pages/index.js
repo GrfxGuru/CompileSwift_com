@@ -9,6 +9,7 @@ import StaticPostCard from "../components/StaticPostCard"
 import VideoWatermarkImage from "../assets/icon-video.svg"
 import BlogWatermarkImage from "../assets/icon-blog.svg"
 import PodcastWatermarkImage from "../assets/icon-podcast.svg"
+import NotificationWatermarkImage from "../assets/icon-new-notification.svg"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 class BlogIndex extends React.Component {
@@ -214,6 +215,15 @@ class BlogIndex extends React.Component {
                     />
                     <br />
                     <ShortBio post={node} hideAvatar hideAuthor />
+                    <img
+                      src={NotificationWatermarkImage}
+                      style={{
+                        width: 40,
+                        position: "relative",
+                        top: 0,
+                        left: 360,
+                      }}
+                    />
                   </div>
                 </Link>
               )
