@@ -8,6 +8,7 @@ import { rhythm, scale } from '../utils/typography';
 import RecentPosts from '../components/RecentPosts';
 import ShortBio from '../components/ShortBio';
 import Sidebar from '../components/Sidebar';
+import SideAffiliates from "../components/SideAffiliates";
 
 class BlogPostTemplate extends React.Component {
 	render() {
@@ -19,7 +20,7 @@ class BlogPostTemplate extends React.Component {
 				<SEO title={post.frontmatter.title} description={post.frontmatter.description || post.excerpt} />
 				<div class="postLeftFloater">
 					<h3>Affiliates</h3>
-					<img />
+					<SideAffiliates/>
 				</div>
 				<div
 					style={{
