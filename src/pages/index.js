@@ -81,12 +81,6 @@ class BlogIndex extends React.Component {
                   paddingRight: rhythm(1),
                 }}
               >
-                <a href={"https://patreon.com/pwcom"}>
-                  <img
-                    src={"/images/cs_patreon.png"}
-                    style={{ maxWidth: "100%" }}
-                  />
-                </a>
               </div>
               <form
                 method="get"
