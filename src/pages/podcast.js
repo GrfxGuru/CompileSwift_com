@@ -30,6 +30,10 @@ class PodcastIndex extends React.Component {
             <br />
             <br />
             <div style={{ textAlign: "center" }}>
+            <iframe src="https://anchor.fm/compileswift/embed" height="124px" width="500px" frameBorder="0"
+                    scrolling="no"></iframe>
+            </div>
+            <div style={{ textAlign: "center" }}>
               <a
                 href="https://podcasts.apple.com/us/podcast/compile-swift/id1467065787"
                 target="_blank"
