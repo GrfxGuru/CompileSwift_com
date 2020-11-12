@@ -71,3 +71,4 @@ yarn-error.log
 content/blog/.Ulysses-Group.plist
 content/blog/podcast/.Ulysses-Group.plist
 .gitignore
+.nova
