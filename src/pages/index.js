@@ -81,8 +81,11 @@ class BlogIndex extends React.Component {
                   paddingRight: rhythm(1),
                 }}
               >
+                <div style={{fontWeight: "bold", fontSize: 20,}}>
+                  <a href="https://www.patreon.com/bePatron?u=43369030" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+                </div>
               </div>
-              <form
+                <form
                 method="get"
                 id="search"
                 action="https://duckduckgo.com/"
