@@ -24,29 +24,32 @@ class PodcastIndex extends React.Component {
 					}}
 				>
 					<div style={{ maxWidth: maxWidth }}>
-						<div style={{ textAlign: 'center', backgroundColor: '#2c4667', borderRadius: 5 }}>
+						<div style={{ textAlign: 'center' }}>
 							<h2 style={{ paddingTop: 10 }}>Interested in appearing on the Podcast?</h2>
-							<h3 style={{ paddingBottom: 10 }}>
+							<h3>
 								<a href="/podcastguest">Click here</a>
 							</h3>
 						</div>
 						<br />
-						<br />
-						<div style={{ textAlign: 'center' }}>
-							<iframe src="https://anchor.fm/compileswift/embed" height="124px" width="500px" frameBorder="0" scrolling="no"></iframe>
-						</div>
-						<div style={{ textAlign: 'center' }}>
-							<a href="https://podcasts.apple.com/us/podcast/compile-swift/id1467065787" target="_blank" style={{ paddingRight: 20 }}>
-								<img src="/images/podcast-players/listen-apple.png" width="200" />
-							</a>
-							<a href="https://open.spotify.com/show/2RGHkl4UtYj0V7lPcRojzK" target="_blank">
-								<img src="/images/podcast-players/listen-spotify.png" width="200" />
-							</a>
+						<div style={{ backorderColor: 'rgb(226, 226, 226)', borderStyle: 'solid', borderRadius: 15}}>
+							<div style={{ textAlign: 'center'}}>
+								<h3 style={{fontWeight: 'bold'}}>Latest episode below</h3>
+							</div>
+							<div style={{ textAlign: 'center' }}>
+								<iframe src="https://anchor.fm/compileswift/embed" height="124px" width="500px" frameBorder="0" scrolling="no"></iframe>
+							</div>
+							<div style={{ textAlign: 'center' }}>
+								<a href="https://podcasts.apple.com/us/podcast/compile-swift/id1467065787" target="_blank" style={{ paddingRight: 20 }}>
+									<img src="/images/podcast-players/listen-apple.png" width="200" />
+								</a>
+								<a href="https://open.spotify.com/show/2RGHkl4UtYj0V7lPcRojzK" target="_blank">
+									<img src="/images/podcast-players/listen-spotify.png" width="200" />
+								</a>
+							</div>
 						</div>
 						<h3 style={{ textAlign: 'center' }}>
 							<a href="/episodes">Click here to see the episode list.</a>
 						</h3>
-						<br />
 						<h2>What is the CompileSwift Podcast about?</h2>
 						<p>The CompileSwift podcast discusses everything from Swift news and tools to the news and anything else that covers the programming language.</p>
 						<p>For example, one episode discussed the beta releases for Apple's platforms while another discussed the SwiftUI framework that was announced at WWDC 2019.</p>
