@@ -56,11 +56,18 @@ class Layout extends React.Component {
 				</Headroom>
 
 				<main>{children}</main>
-				{/* <footer>
-          © {new Date().getFullYear()}, Built with
+				{ <footer style={{textAlign: 'center', paddingTop: 10, paddingBottom: 10}}>
+					<div><a rel="me" href="https://mastodon.online/@compileswift">Mastodon</a> {` | `}
+					<a href="https://twitter.com/compileswift">Twitter</a>  {` | `}
+					<a href="https://youtube.com/grfxg">YouTube</a>  {` | `}
+						<a href="https://instagram.com/compileswift">Instagram</a>
+					</div>
+					<div style={{paddingTop: 20, fontSize: 10}}>
+          © {new Date().getFullYear()} Peter Witham, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer> */}
+					</div>
+        </footer> }
 			</div>
 		);
 	}
