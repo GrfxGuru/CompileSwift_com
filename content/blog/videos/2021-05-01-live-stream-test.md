@@ -12,7 +12,7 @@ You probably missed the live stream test because I did not announce it just in c
 
 But hey, it was not all that bad. So here’s the replay for the next 14 days (I think that’s twitch.tv retention time).
 
-<iframe src="https://player.twitch.tv/?video=1007866545&parent=www.example.com" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
+<iframe src="https://player.twitch.tv/?video=1007866545&parent=www.compileswift.com" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
 
 I’ll be announcing them in the future so keep an eye on [twitter](https://twitter.com/compileswift)
 
