@@ -15,6 +15,7 @@ This video series will show you step by step how to create, access, and share da
 ---------- Tools use in the videos
 
 Xcode 12.5
+
 Swift 5.4
 
 ---------- Video series links
