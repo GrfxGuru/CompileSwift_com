@@ -178,6 +178,7 @@ class BlogIndex extends React.Component {
                   <div
                     key={node.fields.slug}
                     style={{
+                      position: "inherit",
                       maxWidth: 400,
                       minWidth: 400,
                       minHeight: 220,
@@ -217,7 +218,7 @@ class BlogIndex extends React.Component {
                       style={{
                         width: 40,
                         position: "relative",
-                        top: 0,
+                        top: -15,
                         left: 360,
                       }}
                     />
