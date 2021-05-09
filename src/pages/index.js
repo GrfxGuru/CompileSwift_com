@@ -213,15 +213,6 @@ class BlogIndex extends React.Component {
                     />
                     <br />
                     <ShortBio post={node} hideAvatar hideAuthor />
-                    <img
-                      src={NotificationWatermarkImage}
-                      style={{
-                        width: 40,
-                        position: "relative",
-                        top: -15,
-                        left: 360,
-                      }}
-                    />
                   </div>
                 </Link>
               )
