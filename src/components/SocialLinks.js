@@ -30,7 +30,7 @@ function socialLinks() {
         style={{ color: "white" }}
         href={"https://open.spotify.com/show/2RGHkl4UtYj0V7lPcRojzK"}
       >
-        <p>Spotify Podcasts&nbsp;|&nbsp;</p>
+        <p>Spotify Podcasts</p>
       </a>
     </div>
   )
