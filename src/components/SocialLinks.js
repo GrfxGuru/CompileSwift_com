@@ -2,36 +2,58 @@ import React from "react"
 
 function socialLinks() {
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "row",
-        color: "white",
-      }}
-    >
-      <a style={{ color: "white" }} href={"https://twitter.com/compileswift"}>
-        <p>Twitter &nbsp;|&nbsp;</p>
-      </a>
-      <a style={{ color: "white" }} href={"https://instagram.com/compileswift"}>
-        <p>Instagram &nbsp;|&nbsp;</p>
-      </a>
-      <a style={{ color: "white" }} href={"https://patreon.com/compileswift"}>
-        <p>Patreon &nbsp;|&nbsp;</p>
-      </a>
-      <a
-        style={{ color: "white" }}
-        href={
-          "https://podcasts.apple.com/us/podcast/compile-swift/id1467065787"
-        }
+    <div>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          color: "white",
+          justifyContent: "center",
+        }}
       >
-        <p>Apple Podcasts&nbsp;|&nbsp;</p>
-      </a>
-      <a
-        style={{ color: "white" }}
-        href={"https://open.spotify.com/show/2RGHkl4UtYj0V7lPcRojzK"}
+        <a style={{ color: "white" }} href={"https://twitter.com/compileswift"}>
+          <p>Twitter&nbsp;|&nbsp;</p>
+        </a>
+        <a
+          style={{ color: "white" }}
+          href={"https://instagram.com/compileswift"}
+        >
+          <p>Instagram&nbsp;|&nbsp;</p>
+        </a>
+        <a style={{ color: "white" }} href={"https://patreon.com/compileswift"}>
+          <p>Patreon</p>
+        </a>
+      </div>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          color: "white",
+          justifyContent: "center",
+        }}
       >
-        <p>Spotify Podcasts</p>
-      </a>
+        <a
+          style={{ color: "white" }}
+          href={
+            "https://podcasts.apple.com/us/podcast/compile-swift/id1467065787"
+          }
+        >
+          <img
+            src="/images/podcast-players/listen-apple.png"
+            style={{ height: 36 }}
+          />
+          &nbsp;&nbsp;
+        </a>
+        <a
+          style={{ color: "white" }}
+          href={"https://open.spotify.com/show/2RGHkl4UtYj0V7lPcRojzK"}
+        >
+          <img
+            src="/images/podcast-players/listen-spotify.png"
+            style={{ height: 36 }}
+          />
+        </a>
+      </div>
     </div>
   )
 }
