@@ -141,7 +141,7 @@ class BlogIndex extends React.Component {
               <div
                 style={{
                   clear: "both",
-                  backgroundColor: "rgb(245, 119, 56)",
+                  backgroundColor: "#633632",
                   borderStyle: "none",
                   borderRadius: 10,
                   margin: "20px 10px 20px 10px",
@@ -152,7 +152,7 @@ class BlogIndex extends React.Component {
                   minWidth: 380,
                 }}
               >
-                <h3 style={{ color: "White", fontWeight: "Bold" }}>
+                <h3 style={{ color: "White", fontWeight: "Bold", marginTop: 10, textAlign: "Center" }}>
                   Play the Podcast
                 </h3>
                 <iframe
