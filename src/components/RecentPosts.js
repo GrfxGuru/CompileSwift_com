@@ -20,10 +20,12 @@ function RecentPosts() {
         return (
           <div
             style={{
-              width: "100%",
+              width: "70%",
               display: "flex",
               justifyContent: "space-around",
               flexWrap: "wrap",
+              flexDirection: "column",
+              flexFlow: "wrap",
             }}
           >
             {posts.map(p => (
@@ -50,7 +52,7 @@ const recentPostsQuery = graphql`
 
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      limit: 6
+      limit: 4
     ) {
       edges {
         node {
