@@ -29,6 +29,11 @@
   }
 }
 
+.headroom {
+  transform: none !important;
+  position: relative !important ;
+}
+
 .gatsby-highlight-code-line {
   display: block;
   margin-right: -1em;
@@ -71,15 +76,15 @@
 }
 
 .postLeftFloater {
-  width: 250px;
+  width: 190px;
   height: 400px;
   position: absolute;
-  top: 250px;
+  top: 300px;
   left: 20px;
   border-style: solid;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 15px;
-  border-color: lightgray;
+  border-color: gray;
 }
 
 .postLeftFloater H3 {
