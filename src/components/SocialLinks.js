@@ -15,6 +15,12 @@ function socialLinks() {
           <p>Twitter&nbsp;|&nbsp;</p>
         </a>
         <a
+        style={{ color: "white" }}
+        href={"https://facebook.com/compilesw"}
+        >
+        <p>Facebook&nbsp;|&nbsp;</p>
+        </a>
+        <a
           style={{ color: "white" }}
           href={"https://instagram.com/compileswift"}
         >
