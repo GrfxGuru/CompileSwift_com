@@ -1,12 +1,14 @@
 ---
 templateKey: blog-post
-slug: 
+slug:
 author: Peter Witham
-tags: ["Journal"]
+tags: ["Journal", "Podcast"]
 title: How to create a macOS Monterey USB installer
 date: 2021-10-25T16:15:06
 description: Do you want to be able to install Monterey without downloading every time? There is a command for that. Read on.
 ---
+
+<iframe src="https://anchor.fm/compileswift/embed/episodes/Create-a-macOS-Monterey-USB-Installer-e19a5rd" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
 
 The day has arrived at last, macOS Monterey is released into the wild wild Web ready for us to download and run.
 
