@@ -24,32 +24,63 @@ class PodcastIndex extends React.Component {
 					}}
 				>
 					<div style={{ maxWidth: maxWidth }}>
-						<div style={{ textAlign: 'center' }}>
-							<h2 style={{ paddingTop: 10 }}>Interested in appearing on the Podcast?</h2>
-							<h3>
-								<a href="/podcastguest">Click here</a>
-							</h3>
+						<a href="https://compileswift.transistor.fm/subscribe" target={"_blank" }
+							 style={{color: "White"}}>
+						<div style={{textAlign: 'center',
+							fontWeight: 'bold',
+							fontSize: 24,
+							backgroundColor: "rgb(55,97,124)",
+							borderRadius: 15,
+							maxWidth: 700,
+							minWidth: 300,
+							padding: 15,
+							marginTop: 30,
+						}}>
+							Subscribe using your podcast player
 						</div>
-						<br />
-						<div style={{ backorderColor: 'rgb(226, 226, 226)', borderStyle: 'solid', borderRadius: 15}}>
-							<div style={{ textAlign: 'center'}}>
-								<h3 style={{fontWeight: 'bold'}}>Latest episode below</h3>
-							</div>
-							<div style={{ textAlign: 'center' }}>
-								<iframe src="https://anchor.fm/compileswift/embed" height="124px" width="500px" frameBorder="0" scrolling="no"></iframe>
-							</div>
-							<div style={{ textAlign: 'center' }}>
-								<a href="https://podcasts.apple.com/us/podcast/compile-swift/id1467065787" target="_blank" style={{ paddingRight: 20 }}>
-									<img src="/images/podcast-players/listen-apple.png" width="200" />
-								</a>
-								<a href="https://open.spotify.com/show/2RGHkl4UtYj0V7lPcRojzK" target="_blank">
-									<img src="/images/podcast-players/listen-spotify.png" width="200" />
-								</a>
-							</div>
+						</a>
+						<div style={{
+							display: 'flex',
+							flexDirection: 'row',
+							flexWrap: 'wrap',
+							justifyContent: 'space-between',
+
+						}}>
+							<a href="/podcastguest" style={{color: 'white', fontWeight: 'bold',}}>
+						<div style={{textAlign: 'center',
+							fontWeight: 'bold',
+							fontSize: 24,
+							backgroundColor: "rgb(108, 183, 237)",
+							borderRadius: 15,
+							width: 320,
+							height: 50,
+							marginTop: 30,
+						}}>
+							<h2 style={{ paddingTop: 10 }}>Appear on the Podcast</h2>
 						</div>
-						<h3 style={{ textAlign: 'center' }}>
-							<a href="/episodes">Click here to see the episode list.</a>
-						</h3>
+							</a>
+							<a href="/episodes" style={{color: 'white', fontWeight: 'bold',}}>
+						<div style={{textAlign: 'center',
+							fontWeight: 'bold',
+							fontSize: 24,
+							backgroundColor: "rgb(108, 183, 237)",
+							borderRadius: 15,
+							width: 320,
+							height: 50,
+							marginTop: 30,
+						}}>
+						<h2 style={{ paddingTop: 10 }}>Episode list</h2>
+						</div>
+							</a>
+						</div>
+						<div style={{ textAlign: 'center', marginTop: 30, }}>
+							<a href="https://podcasts.apple.com/us/podcast/compile-swift/id1467065787" target="_blank" style={{ paddingRight: 20 }}>
+								<img src="/images/podcast-players/listen-apple.png" width="200" />
+							</a>
+							<a href="https://open.spotify.com/show/2RGHkl4UtYj0V7lPcRojzK" target="_blank">
+								<img src="/images/podcast-players/listen-spotify.png" width="200" />
+							</a>
+						</div>
 						<h2>What is the CompileSwift Podcast about?</h2>
 						<p>The CompileSwift podcast discusses everything from Swift news and tools to the news and anything else that covers the programming language.</p>
 						<p>For example, one episode discussed the beta releases for Apple's platforms while another discussed the SwiftUI framework that was announced at WWDC 2019.</p>
@@ -61,7 +92,7 @@ class PodcastIndex extends React.Component {
 						<p>You asked the best question!</p>
 						<p>
 							You can go direct to the{' '}
-							<a href="https://pw.d.pr/5TbjRs" target="_blank">
+							<a href="https://compileswift.transistor.fm" target="_blank">
 								Podcast episode list here
 							</a>
 							. From there you can either play it via the Web, or listen and subscribe on your favorite player.
