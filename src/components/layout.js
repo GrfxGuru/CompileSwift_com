@@ -3,6 +3,8 @@ import { Link } from "gatsby"
 import Headroom from "react-headroom"
 import { scale } from "../utils/typography"
 import CSLogo from "./cs-logo"
+import { Card, CardContent } from "ui-neumorphism"
+import "ui-neumorphism/dist/index.css"
 
 import Menu from "./Menu"
 import SocialLinks from "../components/SocialLinks"
@@ -55,7 +57,7 @@ class Layout extends React.Component {
           <header>{header}</header>
         </Headroom>
 
-        <main>{children}</main>
+        <main >{children}</main>
         {
           <footer
             style={{ textAlign: "center", paddingTop: 10, paddingBottom: 10 }}

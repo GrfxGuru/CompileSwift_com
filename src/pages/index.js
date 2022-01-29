@@ -9,8 +9,8 @@ import StaticPostCard from "../components/StaticPostCard"
 import VideoWatermarkImage from "../assets/icon-video.svg"
 import BlogWatermarkImage from "../assets/icon-blog.svg"
 import PodcastWatermarkImage from "../assets/icon-podcast.svg"
-import NotificationWatermarkImage from "../assets/icon-new-notification.svg"
-import { OutboundLink } from "gatsby-plugin-google-analytics"
+import { Card, CardContent } from "ui-neumorphism"
+import "ui-neumorphism/dist/index.css"
 
 class BlogIndex extends React.Component {
   render() {
@@ -101,9 +101,9 @@ class BlogIndex extends React.Component {
                   paddingTop: 10,
                   boxShadow: "0px 0px 10px 0 rgba(0,0,0,0.3)",
                   maxWidth: 800,
-                  minWidth: 400,
-                  minHeight: 100,
-                  maxHeight: 100,
+                  minWidth: 800,
+                  minHeight: 50,
+                  maxHeight: 50,
                 }}
               >
                 <input type="hidden" name="sites" value="compileswift.com" />
@@ -117,7 +117,7 @@ class BlogIndex extends React.Component {
                   maxlength="255"
                   placeholder="To search, type and hit Enter…"
                   style={{
-                    width: 300,
+                    width: 690,
                     borderRadius: 6,
                     borderStyle: "solid",
                     borderColor: "rgb(245, 119, 56)",
@@ -130,11 +130,17 @@ class BlogIndex extends React.Component {
                   value="Search"
                   style={{
                     marginLeft: 10,
-                    borderRadius: 6,
+                    borderTopLeftRadius: 6,
+                    borderTopRightRadius: 6,
+                    borderBottomRightRadius: 6,
+                    borderBottomLeftRadius: 6,
                     borderStyle: "solid",
-                    backgroundColor: "rgb(245, 119, 56)",
-                    borderColor: "rgb(245, 119, 56)",
-                    color: "White",
+                    backgroundColor: "rgb(194, 114, 0)",
+                    borderColor: "rgb(255, 207, 88)",
+                    color: "white",
+                    paddingLeft: 5,
+                    paddingRight: 5,
+                    fontWeight: "bold",
                   }}
                 />
               </form>
@@ -149,19 +155,9 @@ class BlogIndex extends React.Component {
                   paddingRight: 10,
                   boxShadow: "0px 0px 10px 0 rgba(0,0,0,0.3)",
                   maxWidth: 800,
-                  minWidth: 380,
+                  minWidth: 800,
                 }}
               >
-                <h3 style={{ color: "White", fontWeight: "Bold", marginTop: 10, textAlign: "Center" }}>
-                  Play the Podcast
-                </h3>
-                <iframe
-                  src="https://anchor.fm/compileswift/embed"
-                  height="102px"
-                  width="380px"
-                  frameborder="0"
-                  scrolling="no"
-                ></iframe>
               </div>
             </div>
             {posts.map(({ node }) => {
@@ -175,23 +171,19 @@ class BlogIndex extends React.Component {
                   }}
                   to={node.fields.slug}
                 >
-                  <div
+                  <Card
                     key={node.fields.slug}
-                    style={{
-                      position: "inherit",
-                      maxWidth: 400,
-                      minWidth: 400,
-                      minHeight: 220,
-                      maxHeight: 220,
-                      borderStyle: "none",
-                      borderRadius: 10,
-                      margin: "20px 10px 20px 10px",
-                      paddingLeft: 10,
-                      paddingRight: 10,
-                      boxShadow: "0px 0px 10px 0 rgba(0,0,0,0.3)",
-                      backgroundColor: "rgb(44, 70, 103)",
+                    rounded width={390} style={{
+                      backgroundColor: "rgb(255, 249, 243)",
+                      borderStyle: "solid",
+                      borderWidth: 1,
+                      borderColor: "#f57738",
+                      maxHeight: 270,
+                      minHeight: 270,
+                      margin: 10,
                     }}
                   >
+                    <CardContent  style={{backgroundColor: "rgb(255, 249, 243)"}}>
                     <h3
                       style={{
                         ...scale(1 / 1.7),
@@ -204,7 +196,7 @@ class BlogIndex extends React.Component {
                     <p
                       style={{
                         ...scale(0 / 5),
-                        color: "white",
+                        color: "black",
                         fontWeight: "normal",
                       }}
                       dangerouslySetInnerHTML={{
@@ -213,7 +205,8 @@ class BlogIndex extends React.Component {
                     />
                     <br />
                     <ShortBio post={node} hideAvatar hideAuthor />
-                  </div>
+                    </CardContent>
+                  </Card>
                 </Link>
               )
             })}
