@@ -9,10 +9,6 @@ const menuItems = [
     path: "/podcast",
   },
   {
-    name: "Newsletter",
-    path: "/newsletter",
-  },
-  {
     name: "About",
     path: "/about",
   },

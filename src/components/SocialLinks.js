@@ -24,10 +24,7 @@ function socialLinks() {
           style={{ color: "white" }}
           href={"https://instagram.com/compileswift"}
         >
-          <p>Instagram&nbsp;|&nbsp;</p>
-        </a>
-        <a style={{ color: "white" }} href={"https://patreon.com/compileswift"}>
-          <p>Patreon</p>
+          <p>Instagram</p>
         </a>
       </div>
       <div

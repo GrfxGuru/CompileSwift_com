@@ -69,22 +69,6 @@ class BlogIndex extends React.Component {
                 alignItems: "center",
               }}
             >
-              <div
-                style={{
-                  marginBottom: 20,
-                  width: "100%",
-                  display: "flex",
-                  flexFlow: "row nowrap",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  paddingLeft: rhythm(1),
-                  paddingRight: rhythm(1),
-                }}
-              >
-                <div style={{fontWeight: "bold", fontSize: 20,}}>
-                  <a href="https://www.patreon.com/bePatron?u=43369030" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
-                </div>
-              </div>
                 <form
                 method="get"
                 id="search"
