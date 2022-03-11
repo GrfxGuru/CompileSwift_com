@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-slug: 
+slug:
 author: Peter Witham
 tags: []
 title: Mac Studio found a gap in the line up
@@ -37,7 +37,7 @@ So take that into account and now look at the ports on the Mac Studio.
 
 And you see how you will quickly fill those ports up. Yes, you can use a hub, but I have found that there are devices that are unhappy on the Mac even with a powered hub.
 
-I feel this is a mixed bag of huge promise and love on the inside with some possible problems on the outside. Combine that with what I consider to be the Achilles heal still that is apps still not ARM ready, and you may find that it causes some issues for you.
+I feel this is a mixed bag of huge promise and love on the inside with some possible problems on the outside. Combine that with what I consider to be the Achilles heel still that is apps still not ARM ready, and you may find that it causes some issues for you.
 
 If you want a desktop and have the money, this is most likely the best bang for your buck for sure, it’s a powerhouse that will keep you happy for a few years at least.
 
