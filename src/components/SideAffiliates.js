@@ -6,9 +6,6 @@ import Afsrs from "../assets/swift-remote-studio.jpg"
 const SideAffiliates = ({ source, alt }) => {
   return (
     <div>
-      <a href="https://swiftremotestudio.com" target="_blank">
-        <img src={Afsrs} alt={"Swift Remote Studio"} />
-      </a>
       <a href="https://pw.d.pr/7f31K6" target="_blank">
         <img src={Afso} alt={"SetApp"} />
       </a>
