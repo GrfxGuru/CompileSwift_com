@@ -1,15 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
 import Headroom from "react-headroom"
-import { scale } from "../utils/typography"
 import CSLogo from "./cs-logo"
-import { Card, CardContent } from "ui-neumorphism"
 import "ui-neumorphism/dist/index.css"
 
 import Menu from "./Menu"
 import SocialLinks from "../components/SocialLinks"
-
-import "../assets/darkmode.css"
 
 class Layout extends React.Component {
   render() {

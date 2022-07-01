@@ -22,8 +22,8 @@ function StaticPostCard({ title, summary, url, watermarkImage }) {
         borderColor: "#f57738",
         maxWidth: 390,
         minWidth: 390,
-        minHeight: 270,
-        maxHeight: 270,
+        minHeight: 200,
+        maxHeight: 200,
         margin: 10,
       }}>
         <CardContent style={{backgroundColor: "rgb(255, 249, 243)"}}>
